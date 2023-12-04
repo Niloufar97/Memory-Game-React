@@ -1,9 +1,12 @@
-function cardContainer() {
+import Card from "./Card"
+import './cards.css'
+
+function CardsContainer() {
   return (
-    <div>
-      
-    </div>
+    <div className="card-container">
+      <Card/>
+    </div>  
   )
 }
 
-export default cardContainer
+export default CardsContainer

@@ -1,0 +1,9 @@
+.card-container{
+    width: 600px;
+    height: 600px;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
