@@ -1,9 +1,8 @@
 .card-container {
     width: 700px;
     background-color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
     gap: 1rem;
     padding: 1rem;
   }
@@ -34,67 +33,15 @@
   }
   
   .card-back {
-    background-color: cadetblue;
+    background-color: rgb(126, 158, 159);
     transform: rotateY(180deg);
+  }
+  .card-back img{
+    width: 100%;
+    height: 100%;
   }
   
   .flipped {
     transform: rotateY(180deg);
   }
   
-
-
-
-/* .card-container{
-    width: 700px;
-    background-color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.card{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: all 0.5 ease;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    cursor: pointer;
-}
-.card-front , .card-back{
-    width: 100%;
-    height: 100%;
-    width: 5rem;
-    height: 5rem;
-    backface-visibility: hidden;
-    position: absolute;
-}
-.card-front{
-    background-color: beige;
-}
-.card-back{
-    background-color: cadetblue;
-    transform: rotateY(180deg); 
-}
-.flipped{
-    transform: rotateY(180deg);
-} */
-/* .card .card-front{
-    background-color: beige;
-    transition: all ease-in 0.2s;
-    transition-delay: 0.2s;
-}
-.flipped .card-front{
-    transform: rotateY(90deg);
-    transition-delay: 0s;
-}
-.card .card-back{
-    transform: rotateY(90deg);
-    transition: all ease-in 0.2s;
-    position: absolute;
-}
-.flipped .card-back{
-    transform: rotateY(0deg);
-    transition-delay: 0.2s;
-} */
