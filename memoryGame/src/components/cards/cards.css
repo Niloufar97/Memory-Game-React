@@ -1,15 +1,15 @@
 .card-container {
-    width: 700px;
     background-color: azure;
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     gap: 1rem;
     padding: 1rem;
   }
+
   
   .card {
-    width: 150px;
-    height: 150px; 
+    width: 100px;
+    height: 100px; 
     position: relative;
     transition: transform 0.5s ease;
     transform-style: preserve-3d;
@@ -43,5 +43,25 @@
   
   .flipped {
     transform: rotateY(180deg);
+  }
+  @media screen and (max-width: 398px){
+    .card-container {
+      grid-template-columns: repeat(4, 1fr);
+      gap:0.5rem;
+    }
+    .card{
+      width: 60px;
+      height: 60px; 
+    }
+  }
+  @media (min-width: 399px) and (max-width: 500px){
+    .card-container {
+      grid-template-columns: repeat(4, 1fr);
+      gap:0.5rem;
+    }
+    .card{
+      width: 80px;
+      height: 80px; 
+    }
   }
   
